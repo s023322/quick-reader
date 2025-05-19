@@ -1,3 +1,5 @@
+const synth = window.speechSynthesis;
+
 function speak() {
   let textElement = document.getElementById("text");
   let text = document.getElementById("inputText").value || "test";
@@ -20,4 +22,12 @@ function speak() {
       textElement.innerHTML = word;
     });
   }
+}
+
+function pause() {
+  synth.pause();
+}
+
+function resume() {
+  synth.resume();
 }
