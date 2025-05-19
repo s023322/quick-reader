@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Reader</title>
+  </head>
+  <body
+    style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    "
+  >
+    <div style="position: fixed; top: 0px">
+      <input type="text" id="inputText" placeholder="test" />
+      <input
+        type="number"
+        id="readingSpeed"
+        style="width: 32px"
+        placeholder="5"
+        spellcheck="false"
+        autocomplete="off"
+        aria-autocomplete="none"
+      />
+      <button onclick="speak()">Speak</button>
+    </div>
+    <h1
+      id="text"
+      style="
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 200;
+        font-size: 15vh;
+      "
+    ></h1>
+    <script src="./src/speech.js"></script>
+  </body>
+</html>
