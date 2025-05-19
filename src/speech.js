@@ -15,7 +15,7 @@ function speak() {
     speech.pitch = 0.1;
     speech.volume = 1;
     speech.lang = "en-US";
-    window.speechSynthesis.speak(speech);
+    synth.speak(speech);
 
     speech.addEventListener("boundary", ({ charIndex, charLength }) => {
       const word = text.slice(charIndex, charIndex + charLength);
